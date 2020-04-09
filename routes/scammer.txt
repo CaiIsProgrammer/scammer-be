@@ -1,0 +1,1 @@
+ new location  long -83.2019505 lat 35.3608417 new location  long -83.20197429999999 lat 35.360762 new location  long 3.619089 lat 6.8448383 new location  long 3.619089 lat 6.8448383 new location  long -83.2019524 lat 35.3608197 new location  long -79.45783223001592 lat 35.73438009999999 new location  long 35.6845356 lat 32.9948576
