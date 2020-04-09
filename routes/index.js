@@ -9,6 +9,8 @@ router.post("/location", async (req, res) => {
     long: req.body.long
   });
   await location.save();
+  console.log(location)
+  console.log("written")
   res.send("saved");
 });
 
