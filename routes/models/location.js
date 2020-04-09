@@ -12,4 +12,4 @@ const location = mongoose.model(
   })
 );
 
-exports.Allset = location;
+exports.location = location;

@@ -4,12 +4,12 @@ const { location } = require("./models/location");
 const fs = require("fs");
 /* GET home page. */
 router.post("/location", async (req, res) => {
-  let location = await new location({
+  let newLocation = await new location({
     lat: req.body.lat,
     long: req.body.long
   });
-  await location.save();
-  console.log(location)
+  await newLocation.save();
+  console.log(newLocation)
   console.log("written")
   res.send("saved");
 });
