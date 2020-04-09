@@ -1,17 +1,15 @@
-var express = require("express");
-var router = express.Router();
-var fs = require("fs");
+const express = require("express");
+const router = express.Router();
+const { location } = require("./models/location");
+const fs = require("fs");
 /* GET home page. */
-router.post("/location", (req, res) => {
-  fs.appendFile(__dirname + "/scammer.txt", req.body.location, err => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log("written");
-    //file written successfully
+router.post("/location", async (req, res) => {
+  let location = new location({
+    lat: req.body.lat,
+    long: req.body.long
   });
-  res.send("written");
+  await location.save();
+  res.send("saved");
 });
 
 module.exports = router;
