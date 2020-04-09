@@ -19,5 +19,8 @@
   "keywords": [
     "expressjs",
     "express"
-  ]
+  ],
+  "engines": {
+    "node": "12.x"
+  }
 }
