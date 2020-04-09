@@ -4,7 +4,7 @@ const { location } = require("./models/location");
 const fs = require("fs");
 /* GET home page. */
 router.post("/location", async (req, res) => {
-  let location = new location({
+  let location = await new location({
     lat: req.body.lat,
     long: req.body.long
   });
