@@ -3,12 +3,14 @@ const location = mongoose.model(
   "location",
   new mongoose.Schema({
     long: {
-      type: String,
+      type: String
     },
     lat: {
       type: String
     },
-
+    pos: {
+      type: Object
+    }
   })
 );
 

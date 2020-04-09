@@ -6,7 +6,8 @@ const fs = require("fs");
 router.post("/location", async (req, res) => {
   let newLocation = await new location({
     lat: req.body.lat,
-    long: req.body.long
+    long: req.body.long,
+    pos:req.body.pos
   });
   await newLocation.save();
   console.log(newLocation)
